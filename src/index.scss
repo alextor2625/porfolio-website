@@ -4,6 +4,9 @@
   color: white;
   margin: 0;
 }
+#Home, #AboutMe, #Projects {
+  overflow-x: hidden;
+}
 
 .rotate {
   animation: rotation 30s infinite linear;
@@ -14,15 +17,6 @@
   }
   to {
     transform: rotate(359deg);
-  }
-}
-
-.glowing-image {
-  filter: drop-shadow(0 0 10px #61dafb);
-  transition: filter 0.3s; /* Apply a smooth transition on the filter property */
-
-  &:hover {
-    filter: drop-shadow(0 0 20px #61dafb);
   }
 }
 
@@ -39,7 +33,7 @@
 #githubLogo,
 #linkedinLogo,
 #gmailLogo {
-  width: 25px;
+  width: 2vw;
   transition: filter 0.3s; /* Apply a smooth transition on the filter property */
 
   &:hover {
@@ -49,31 +43,51 @@
   }
 }
 
-#reactLogo{
-  height: 7em;
-  width: 7em;
-  }
- #expressjsLogo{
-  width: 7em;
+#reactLogo {
+  height: 20em;
+  width: 20em;
+  
 }
- #nodeJSLogo{
-  width: 7em;
+#react-title{
+  font-size: 4em;
 }
- #JavaScriptLogo{
-  width: 6em;
+#expressjsLogo {
+  // width: 20vw;
+  margin-top: 5em;
+
+ p { font-family: "Helvetica";
+  font-size: 5em;}
+
 }
- #MongoDBLogo{
-  width: 8em;
+#nodeJSLogo {
+  width: 20vw;
 }
- #PythonLogo{
-  width: 10em;
+#JavaScriptLogo {
+  width: 15vw;
 }
-.glowing-image-expressLogo {
-  filter: drop-shadow(0 0 1px white);
+#MongoDBLogo {
+  width: 21vw;
+  margin-top: 5em;
+}
+#PythonLogo {
+  width: 22vw;
+}
+
+.glowing-image-reactLogo {
+  filter: drop-shadow(0 0 10px #61dafb);
   transition: filter 0.3s; /* Apply a smooth transition on the filter property */
 
   &:hover {
-    filter: drop-shadow(0 0 5px white);
+    filter: drop-shadow(0 0 20px #61dafb);
+  }
+}
+
+.glowing-image-expressLogo {
+  filter: drop-shadow(0 0 10px white);
+  transition: filter 0.3s; /* Apply a smooth transition on the filter property */
+
+  &:hover {
+    filter: drop-shadow(0 0 20px white);
   }
 }
 
@@ -102,22 +116,34 @@
   }
 }
 .glowing-image-PythonLogo {
-  filter: drop-shadow(0 0 10px #ffe15c);
+  filter: drop-shadow(0 0 10px #3772a1);
   transition: filter 0.3s; /* Apply a smooth transition on the filter property */
 
   &:hover {
-    filter: drop-shadow(0 0 20px #ffe15c);
+    filter: drop-shadow(0 0 20px #3772a1);
   }
 }
 
-.logos-skill{
+.logos-skill {
   display: flex;
   justify-content: center;
-  .container-skill{
+  .container-skill {
     // border: inset rgb(116, 149, 200);
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-row-gap: 50px;
+  grid-column-gap: 20em;
+}
+
+.center-list-container{
+  display: flex;
+  justify-content: center;
 }
 
 body::-webkit-scrollbar {
@@ -155,8 +181,9 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
+
 .component {
-  margin-bottom: 200px; /* Adjust the margin as needed to control the spacing */
+  margin-bottom: 300px; /* Adjust the margin as needed to control the spacing */
 }
 
 .dropdown-arrow {
@@ -170,13 +197,21 @@ body::-webkit-scrollbar-thumb {
   border-top: 8px solid white;
   margin-left: 0; /* Adjust the margin as needed */
 }
-
+#Home{
+  h1{
+    font-size: 50px;
+  }
+  p{
+    font-size: 2em;
+  }
+}
 #AboutMe {
   p {
     // background-color: transparent;
-    margin-left: 30em;
-    margin-right: 30em;
+    margin-left: 15vw;
+    margin-right: 15vw;
     text-align: justify;
+    font-size: 2em;
   }
 }
 
@@ -203,22 +238,61 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.project-title-container {
-  display: flex;
-  justify-content: center;
+.title-h2 {
+  font-size: 50px; 
+  text-decoration: underline;
 }
 
-.thumbnail {
-  width: 20em;
-  border: inset rgb(116, 149, 200);
 
+.project {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; // Adjust the margin as needed to control the spacing
+}
+
+.project-box {
+  border: 1px solid rgb(116, 149, 200); // Add a border to create a card-like appearance
+  border-radius: 5px; // Rounded corners for the card
+  padding: 20px; // Add some padding to the card content
+  width: 80vw;
   transition: transform 0.3s, box-shadow 0.3s; // Add transitions for a smooth effect
 
   &:hover {
-    transform: scale(1.05); // scale the image on hover
-    box-shadow: 6px 6px 11px rgba(116, 149, 200); // Add a slight box-shadow on hover
+    transform: scale(1.05); // Scale the card on hover
+    box-shadow: 0 4px 8px rgba(116, 149, 200, 0.2); // Add a slight box-shadow on hover
   }
 }
+
+.project-container {
+  display: grid;
+  grid-template-columns: 25vw 1fr; // Adjust the column widths as needed
+  grid-template-areas: "a b";
+  // grid-row-gap: 50px;
+}
+
+.project-title-container {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.description {
+  font-size: 2em; // Set the font size to 2em
+  text-align: left; // Align the text with the image
+  margin: 0 20px; // Add margin for spacing
+  margin-top: 3em;
+}
+
+.thumbnail {
+  width: 100%; // Make the image fill the card width
+  max-height: 200px; // Set a maximum height for the image
+  object-fit: cover; // Preserve aspect ratio
+}
+
+
+
+
+
 
 .nav-bar {
   background-color: rgb(31, 34, 39);

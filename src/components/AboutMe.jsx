@@ -1,8 +1,13 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init()
+
 const AboutMe = () => {
   return (
     <div id="AboutMe">
-      <h2>About Me</h2>
-      <p>
+      <h2 className="title-h2" data-aos="fade-down">About Me</h2>
+      <p data-aos="zoom-out">
         Full Stack Web Developer with a solid background in computer science. I
         have a BS in computer science with a minor in cybersecurity. I thrive on
         self-improvement and actively seek opportunities to broaden my abilities

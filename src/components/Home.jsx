@@ -9,8 +9,7 @@ const Home = () => {
       <img src="" alt="myImage" />
       <h1>Alexander Torres</h1>
       <p>
-        Full Stack Developer - React | Express | NodeJs | JavaScript | MongoDB |
-        Python
+        Full Stack Developer
       </p>
       <div className="logos">
         <div className="container">

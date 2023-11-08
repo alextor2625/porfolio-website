@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+#Home, #AboutMe, #Projects {
+  overflow-x: hidden;
+}
+
 .rotate {
   animation: rotation 30s infinite linear;
 }
@@ -17,14 +21,6 @@
     transform: rotate(359deg);
   }
 }
-.glowing-image {
-  filter: drop-shadow(0 0 10px #61dafb);
-  transition: filter 0.3s; /* Apply a smooth transition on the filter property */
-}
-.glowing-image:hover {
-  filter: drop-shadow(0 0 20px #61dafb);
-}
-
 .logos {
   display: flex;
   justify-content: center;
@@ -38,7 +34,7 @@
 #githubLogo,
 #linkedinLogo,
 #gmailLogo {
-  width: 25px;
+  width: 2vw;
   transition: filter 0.3s; /* Apply a smooth transition on the filter property */
 }
 #githubLogo:hover,
@@ -48,36 +44,53 @@
 }
 
 #reactLogo {
-  height: 7em;
-  width: 7em;
+  height: 20em;
+  width: 20em;
+}
+
+#react-title {
+  font-size: 4em;
 }
 
 #expressjsLogo {
-  width: 7em;
+  margin-top: 5em;
+}
+#expressjsLogo p {
+  font-family: "Helvetica";
+  font-size: 5em;
 }
 
 #nodeJSLogo {
-  width: 7em;
+  width: 20vw;
 }
 
 #JavaScriptLogo {
-  width: 6em;
+  width: 15vw;
 }
 
 #MongoDBLogo {
-  width: 8em;
+  width: 21vw;
+  margin-top: 5em;
 }
 
 #PythonLogo {
-  width: 10em;
+  width: 22vw;
+}
+
+.glowing-image-reactLogo {
+  filter: drop-shadow(0 0 10px #61dafb);
+  transition: filter 0.3s; /* Apply a smooth transition on the filter property */
+}
+.glowing-image-reactLogo:hover {
+  filter: drop-shadow(0 0 20px #61dafb);
 }
 
 .glowing-image-expressLogo {
-  filter: drop-shadow(0 0 1px white);
+  filter: drop-shadow(0 0 10px white);
   transition: filter 0.3s; /* Apply a smooth transition on the filter property */
 }
 .glowing-image-expressLogo:hover {
-  filter: drop-shadow(0 0 5px white);
+  filter: drop-shadow(0 0 20px white);
 }
 
 .glowing-image-nodeJSLogo {
@@ -105,11 +118,11 @@
 }
 
 .glowing-image-PythonLogo {
-  filter: drop-shadow(0 0 10px #ffe15c);
+  filter: drop-shadow(0 0 10px #3772a1);
   transition: filter 0.3s; /* Apply a smooth transition on the filter property */
 }
 .glowing-image-PythonLogo:hover {
-  filter: drop-shadow(0 0 20px #ffe15c);
+  filter: drop-shadow(0 0 20px #3772a1);
 }
 
 .logos-skill {
@@ -119,6 +132,18 @@
 .logos-skill .container-skill {
   display: flex;
   flex-direction: column;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-row-gap: 50px;
+  grid-column-gap: 20em;
+}
+
+.center-list-container {
+  display: flex;
+  justify-content: center;
 }
 
 body::-webkit-scrollbar {
@@ -148,7 +173,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .component {
-  margin-bottom: 200px; /* Adjust the margin as needed to control the spacing */
+  margin-bottom: 300px; /* Adjust the margin as needed to control the spacing */
 }
 
 .dropdown-arrow {
@@ -163,10 +188,18 @@ body::-webkit-scrollbar-thumb {
   margin-left: 0; /* Adjust the margin as needed */
 }
 
+#Home h1 {
+  font-size: 50px;
+}
+#Home p {
+  font-size: 2em;
+}
+
 #AboutMe p {
-  margin-left: 30em;
-  margin-right: 30em;
+  margin-left: 15vw;
+  margin-right: 15vw;
   text-align: justify;
+  font-size: 2em;
 }
 
 #Projects #DecodeMe * {
@@ -190,19 +223,53 @@ body::-webkit-scrollbar-thumb {
   filter: invert(50%);
 }
 
+.title-h2 {
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.project-box {
+  border: 1px solid rgb(116, 149, 200);
+  border-radius: 5px;
+  padding: 20px;
+  width: 80vw;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(116, 149, 200, 0.2);
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 25vw 1fr;
+  grid-template-areas: "a b";
+}
+
 .project-title-container {
   display: flex;
   justify-content: center;
+  font-size: 2em;
+}
+
+.description {
+  font-size: 2em;
+  text-align: left;
+  margin: 0 20px;
+  margin-top: 3em;
 }
 
 .thumbnail {
-  width: 20em;
-  border: inset rgb(116, 149, 200);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.thumbnail:hover {
-  transform: scale(1.05);
-  box-shadow: 6px 6px 11px rgb(116, 149, 200);
+  width: 100%;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .nav-bar {
