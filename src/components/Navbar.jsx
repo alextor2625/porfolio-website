@@ -1,41 +1,98 @@
+import { Link } from "react-scroll";
 const Navbar = () => {
   return (
     <nav className="nav-bar">
       <ul className="nav-bar-links">
         <li>
-          <a href="#Home" className="nav-link">
+          <Link
+            to="Home"
+            className="nav-link"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#AboutMe" className="nav-link">
+          <Link
+            to="AboutMe"
+            className="nav-link"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             About Me
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#Skills" className="nav-link">
+          <Link
+            to="Skills"
+            className="nav-link"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Skills
-          </a>
+          </Link>
         </li>
         <li className="dropdown">
-          <a href="#Projects" className="nav-link ">
+          <Link
+            to="Projects"
+            className="nav-link"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Projects <span className="dropdown-arrow"></span>
-          </a>
+          </Link>
           <ul className="dropdown-content">
             <li>
-              <a href="" className="nav-link">
+              <Link
+                to="CookBook"
+                className="nav-link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 CookBook
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="nav-link">
+              <Link
+                to="MotekRewards"
+                className="nav-link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Motek Rewards
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="nav-link">
+              <Link
+                to="DecodeMe"
+                className="nav-link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 DecodeMe
-              </a>
+              </Link>
             </li>
           </ul>
         </li>
