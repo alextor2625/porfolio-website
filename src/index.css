@@ -5,6 +5,26 @@
   margin: 0;
 }
 
+.rotate {
+  animation: rotation 30s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.glowing-image {
+  filter: drop-shadow(0 0 10px #61dafb);
+  transition: filter 0.3s; /* Apply a smooth transition on the filter property */
+}
+.glowing-image:hover {
+  filter: drop-shadow(0 0 20px #61dafb);
+}
+
 .logos {
   display: flex;
   justify-content: center;
@@ -25,6 +45,80 @@
 #linkedinLogo:hover,
 #gmailLogo:hover {
   filter: invert(50%); /* Adjust the invert percentage for the desired hover effect */
+}
+
+#reactLogo {
+  height: 7em;
+  width: 7em;
+}
+
+#expressjsLogo {
+  width: 7em;
+}
+
+#nodeJSLogo {
+  width: 7em;
+}
+
+#JavaScriptLogo {
+  width: 6em;
+}
+
+#MongoDBLogo {
+  width: 8em;
+}
+
+#PythonLogo {
+  width: 10em;
+}
+
+.glowing-image-expressLogo {
+  filter: drop-shadow(0 0 1px white);
+  transition: filter 0.3s; /* Apply a smooth transition on the filter property */
+}
+.glowing-image-expressLogo:hover {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.glowing-image-nodeJSLogo {
+  filter: drop-shadow(0 0 10px #73aa62);
+  transition: filter 0.3s; /* Apply a smooth transition on the filter property */
+}
+.glowing-image-nodeJSLogo:hover {
+  filter: drop-shadow(0 0 20px #73aa62);
+}
+
+.glowing-image-JavaScriptLogo {
+  filter: drop-shadow(0 0 10px #f0db4f);
+  transition: filter 0.3s; /* Apply a smooth transition on the filter property */
+}
+.glowing-image-JavaScriptLogo:hover {
+  filter: drop-shadow(0 0 20px #f0db4f);
+}
+
+.glowing-image-MongoDBLogo {
+  filter: drop-shadow(0 0 10px #4db13e);
+  transition: filter 0.3s; /* Apply a smooth transition on the filter property */
+}
+.glowing-image-MongoDBLogo:hover {
+  filter: drop-shadow(0 0 20px #4db13e);
+}
+
+.glowing-image-PythonLogo {
+  filter: drop-shadow(0 0 10px #ffe15c);
+  transition: filter 0.3s; /* Apply a smooth transition on the filter property */
+}
+.glowing-image-PythonLogo:hover {
+  filter: drop-shadow(0 0 20px #ffe15c);
+}
+
+.logos-skill {
+  display: flex;
+  justify-content: center;
+}
+.logos-skill .container-skill {
+  display: flex;
+  flex-direction: column;
 }
 
 body::-webkit-scrollbar {
