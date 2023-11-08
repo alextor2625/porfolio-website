@@ -22,11 +22,11 @@
   transition: filter 0.3s; /* Apply a smooth transition on the filter property */
 
   &:hover {
-    filter: invert(50%); /* Adjust the invert percentage for the desired hover effect */
+    filter: invert(
+      50%
+    ); /* Adjust the invert percentage for the desired hover effect */
   }
 }
-
-
 
 body::-webkit-scrollbar {
   color: rgb(31, 34, 39);
@@ -81,12 +81,54 @@ body::-webkit-scrollbar-thumb {
 
 #AboutMe {
   p {
-    background-color: transparent;
-    margin-left: 25em;
-    margin-right: 25em;
+    // background-color: transparent;
+    margin-left: 30em;
+    margin-right: 30em;
     text-align: justify;
   }
 }
+
+#Projects {
+  #DecodeMe * {
+    text-decoration: none;
+    color: white;
+  }
+  #MotekRewards * {
+    text-decoration: none;
+    color: white;
+  }
+  #CookBook * {
+    text-decoration: none;
+    color: white;
+  }
+}
+.project-title {
+  width: 135px;
+  transition: filter 0.3s;
+
+  &:hover {
+    filter: invert(50%); // Change the color to red on hover
+  }
+}
+
+.project-title-container{
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail{
+  width: 20em;
+  border: inset rgb(116, 149, 200);
+
+  transition: transform 0.3s, box-shadow 0.3s; // Add transitions for a smooth effect
+
+  &:hover {
+    transform:  scale(1.05); // scale the image on hover
+    box-shadow: 6px 6px 11px rgba(116, 149, 200); // Add a slight box-shadow on hover
+  }
+}
+
+
 
 .nav-bar {
   background-color: rgb(31, 34, 39);
@@ -106,7 +148,7 @@ body::-webkit-scrollbar-thumb {
       transition: filter 0.3s;
 
       &:hover {
-        filter: invert(50%) // Change the color to red on hover
+        filter: invert(50%); // Change the color to red on hover
       }
     }
 
@@ -132,7 +174,7 @@ body::-webkit-scrollbar-thumb {
           transition: filter 0.3s;
 
           &:hover {
-            filter: invert(50%) // Change the color to red on hover
+            filter: invert(50%); // Change the color to red on hover
           }
         }
       }
@@ -145,8 +187,12 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-#Skills {
-  .no-list-decoration {
-    list-style: none;
-  }
+.no-list-decoration {
+  list-style: none;
 }
+
+// #Skills {
+//   .no-list-decoration {
+//     list-style: none;
+//   }
+// }

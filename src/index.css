@@ -70,10 +70,45 @@ body::-webkit-scrollbar-thumb {
 }
 
 #AboutMe p {
-  background-color: transparent;
-  margin-left: 25em;
-  margin-right: 25em;
+  margin-left: 30em;
+  margin-right: 30em;
   text-align: justify;
+}
+
+#Projects #DecodeMe * {
+  text-decoration: none;
+  color: white;
+}
+#Projects #MotekRewards * {
+  text-decoration: none;
+  color: white;
+}
+#Projects #CookBook * {
+  text-decoration: none;
+  color: white;
+}
+
+.project-title {
+  width: 135px;
+  transition: filter 0.3s;
+}
+.project-title:hover {
+  filter: invert(50%);
+}
+
+.project-title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 20em;
+  border: inset rgb(116, 149, 200);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 11px rgb(116, 149, 200);
 }
 
 .nav-bar {
@@ -125,6 +160,6 @@ body::-webkit-scrollbar-thumb {
   animation: slideDown 0.3s ease-in-out;
 }
 
-#Skills .no-list-decoration {
+.no-list-decoration {
   list-style: none;
 }/*# sourceMappingURL=index.css.map */
