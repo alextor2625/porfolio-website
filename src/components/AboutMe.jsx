@@ -1,12 +1,9 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-AOS.init()
-
 const AboutMe = () => {
   return (
     <div id="AboutMe">
-      <h2 className="title-h2" data-aos="fade-down">About Me</h2>
+      <h2 className="title-h2" data-aos="fade-down">
+        About Me
+      </h2>
       <p data-aos="zoom-out">
         Full Stack Web Developer with a solid background in computer science. I
         have a BS in computer science with a minor in cybersecurity. I thrive on
@@ -15,6 +12,11 @@ const AboutMe = () => {
         collaborative team settings as well as on my own. When given a
         challenge, I give it my all.
       </p>
+      <a href="https://drive.google.com/file/d/1-70uIPMn-P89CUOD8n5Wt_5tl_8-drCo/view?usp=sharing">
+        <button>
+          Resume
+        </button>
+      </a>
     </div>
   );
 };

@@ -5,15 +5,11 @@ import JavaScriptLogo from "../assets/logos/JavaScriptLogo.png";
 import MongoDBLogo from "../assets/logos/MongoDBLogo.png";
 import PythonLogo from "../assets/logos/PythonLogo.png";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-AOS.init()
 
 const Skills = () => {
   return (
     <div id="Skills">
-      <div style={{ marginLeft: "50px" }} data-aos="fade-right">
+      <div style={{ marginLeft: "50px" }} data-aos="fade-down">
           <h2 className="title-h2">Skills</h2>
       </div>
       <div className="center-list-container">
@@ -50,7 +46,7 @@ const Skills = () => {
             </div>
           </li>
           <li className="logos-skill">
-            <div className="container-skill" data-aos="zoom-out">
+            <div className="container-skill" data-aos="zoom-in">
               <img
                 src={JavaScriptLogo}
                 alt="JavaScript logo"
@@ -60,7 +56,7 @@ const Skills = () => {
             </div>
           </li>
           <li className="logos-skill">
-            <div className="container-skill" data-aos="zoom-in">
+            <div className="container-skill" data-aos="zoom-out">
               <img
                 src={MongoDBLogo}
                 alt="MongoDB logo"

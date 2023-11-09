@@ -4,7 +4,9 @@
   color: white;
   margin: 0;
 }
-#Home, #AboutMe, #Projects {
+#Home,
+#AboutMe,
+#Projects {
   overflow-x: hidden;
 }
 
@@ -24,7 +26,7 @@
   display: flex;
   justify-content: center;
   .container {
-    width: 10em;
+    width: 13vw;
     display: flex;
     justify-content: space-evenly;
   }
@@ -33,7 +35,7 @@
 #githubLogo,
 #linkedinLogo,
 #gmailLogo {
-  width: 2vw;
+  width: 2.5vw;
   transition: filter 0.3s; /* Apply a smooth transition on the filter property */
 
   &:hover {
@@ -46,18 +48,18 @@
 #reactLogo {
   height: 20em;
   width: 20em;
-  
 }
-#react-title{
+#react-title {
   font-size: 4em;
 }
 #expressjsLogo {
   // width: 20vw;
   margin-top: 5em;
 
- p { font-family: "Helvetica";
-  font-size: 5em;}
-
+  p {
+    font-family: "Helvetica";
+    font-size: 5em;
+  }
 }
 #nodeJSLogo {
   width: 20vw;
@@ -141,7 +143,7 @@
   grid-column-gap: 20em;
 }
 
-.center-list-container{
+.center-list-container {
   display: flex;
   justify-content: center;
 }
@@ -181,7 +183,6 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
-
 .component {
   margin-bottom: 300px; /* Adjust the margin as needed to control the spacing */
 }
@@ -197,11 +198,12 @@ body::-webkit-scrollbar-thumb {
   border-top: 8px solid white;
   margin-left: 0; /* Adjust the margin as needed */
 }
-#Home{
-  h1{
+
+#Home {
+  h1 {
     font-size: 50px;
   }
-  p{
+  p {
     font-size: 2em;
   }
 }
@@ -212,6 +214,12 @@ body::-webkit-scrollbar-thumb {
     margin-right: 15vw;
     text-align: justify;
     font-size: 2em;
+  }
+}
+
+#ContactMe {
+   h1 {
+    font-size: 50px;
   }
 }
 
@@ -239,10 +247,29 @@ body::-webkit-scrollbar-thumb {
 }
 
 .title-h2 {
-  font-size: 50px; 
-  text-decoration: underline;
+  font-size: 50px;
+  text-decoration: solid;
 }
 
+#DecodeMe:hover {
+  .project-box {
+    transform: scale(1.05);
+    box-shadow: 0 8px 14px rgba(116, 149, 200, 0.3); /* Stronger shadow */
+  }
+}
+
+#MotekRewards:hover {
+  .project-box {
+    transform: scale(1.05);
+    box-shadow: 0 8px 14px rgba(116, 149, 200, 0.3); /* Stronger shadow */
+  }
+}
+#CookBook:hover {
+  .project-box {
+    transform: scale(1.05);
+    box-shadow: 0 8px 14px rgba(116, 149, 200, 0.3); /* Stronger shadow */
+  }
+}
 
 .project {
   display: flex;
@@ -257,10 +284,10 @@ body::-webkit-scrollbar-thumb {
   width: 80vw;
   transition: transform 0.3s, box-shadow 0.3s; // Add transitions for a smooth effect
 
-  &:hover {
-    transform: scale(1.05); // Scale the card on hover
-    box-shadow: 0 4px 8px rgba(116, 149, 200, 0.2); // Add a slight box-shadow on hover
-  }
+  // &:hover {
+  //   transform: scale(1.05); // Scale the card on hover
+  //   box-shadow: 0 4px 8px rgba(116, 149, 200, 0.2); // Add a slight box-shadow on hover
+  // }
 }
 
 .project-container {
@@ -288,11 +315,6 @@ body::-webkit-scrollbar-thumb {
   max-height: 200px; // Set a maximum height for the image
   object-fit: cover; // Preserve aspect ratio
 }
-
-
-
-
-
 
 .nav-bar {
   background-color: rgb(31, 34, 39);

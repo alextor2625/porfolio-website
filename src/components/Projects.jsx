@@ -5,7 +5,9 @@ import CookBookThumbnail from "../assets/thumbnails/CookBookThumbnail.png";
 const Projects = () => {
   return (
     <div id="Projects">
-      <h2 className="title-h2" data-aos="fade-down">Projects</h2>
+      <h2 className="title-h2" data-aos="fade-down">
+        Projects
+      </h2>
       <div id="DecodeMe" className="project">
         <div className="project-box" data-aos="fade-left">
           <a
@@ -53,26 +55,29 @@ const Projects = () => {
         </div>
       </div>
       <div id="CookBook" className="project" data-aos="fade-left">
-  <div className="project-box">
-    <a href="https://cookbookrecipe.netlify.app" className="project-container">
-      <div>
-        <div className="project-title-container">
-          <h3>CookBook</h3>
+        <div className="project-box">
+          <a
+            href="https://cookbookrecipe.netlify.app"
+            className="project-container"
+          >
+            <div>
+              <div className="project-title-container">
+                <h3>CookBook</h3>
+              </div>
+              <img
+                src={CookBookThumbnail}
+                alt="cookbook-thumbnail"
+                className="thumbnail"
+              />
+            </div>
+            <span className="description">
+              Ironhack React Project, this app is a Cookbook web app. Allows
+              users to add cooking recipes into their cookbooks either by adding
+              their own recipe manually or adding other's recipes.
+            </span>
+          </a>
         </div>
-        <img
-          src={CookBookThumbnail}
-          alt="cookbook-thumbnail"
-          className="thumbnail"
-        />
       </div>
-      <span className="description">
-        Ironhack React Project, this app is a Cookbook web app. Allows users to
-        add cooking recipes into their cookbooks either by adding their own
-        recipe manually or adding other's recipes.
-      </span>
-    </a>
-  </div>
-</div>
     </div>
   );
 };

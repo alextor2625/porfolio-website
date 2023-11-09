@@ -5,7 +5,9 @@
   margin: 0;
 }
 
-#Home, #AboutMe, #Projects {
+#Home,
+#AboutMe,
+#Projects {
   overflow-x: hidden;
 }
 
@@ -26,7 +28,7 @@
   justify-content: center;
 }
 .logos .container {
-  width: 10em;
+  width: 13vw;
   display: flex;
   justify-content: space-evenly;
 }
@@ -34,7 +36,7 @@
 #githubLogo,
 #linkedinLogo,
 #gmailLogo {
-  width: 2vw;
+  width: 2.5vw;
   transition: filter 0.3s; /* Apply a smooth transition on the filter property */
 }
 #githubLogo:hover,
@@ -202,6 +204,10 @@ body::-webkit-scrollbar-thumb {
   font-size: 2em;
 }
 
+#ContactMe h1 {
+  font-size: 50px;
+}
+
 #Projects #DecodeMe * {
   text-decoration: none;
   color: white;
@@ -225,7 +231,23 @@ body::-webkit-scrollbar-thumb {
 
 .title-h2 {
   font-size: 50px;
-  text-decoration: underline;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+#DecodeMe:hover .project-box {
+  transform: scale(1.05);
+  box-shadow: 0 8px 14px rgba(116, 149, 200, 0.3); /* Stronger shadow */
+}
+
+#MotekRewards:hover .project-box {
+  transform: scale(1.05);
+  box-shadow: 0 8px 14px rgba(116, 149, 200, 0.3); /* Stronger shadow */
+}
+
+#CookBook:hover .project-box {
+  transform: scale(1.05);
+  box-shadow: 0 8px 14px rgba(116, 149, 200, 0.3); /* Stronger shadow */
 }
 
 .project {
@@ -240,10 +262,6 @@ body::-webkit-scrollbar-thumb {
   padding: 20px;
   width: 80vw;
   transition: transform 0.3s, box-shadow 0.3s;
-}
-.project-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(116, 149, 200, 0.2);
 }
 
 .project-container {
