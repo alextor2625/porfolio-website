@@ -1,26 +1,32 @@
 import githubLogo from "../assets/logos/githubLogo.png";
 import linkedinLogo from "../assets/logos/linkedinLogo.png";
 import gmailLogo from "../assets/logos/gmailLogo.png";
-import myProfilePicture from "../assets/myProfilePicture.jpg";
 import { TypeAnimation } from "react-type-animation";
 
-const Home = () => {
+const Footer = () => {
   return (
-    <div id="Home">
-      <img src={myProfilePicture} alt="myImage" id="profile-image" data-aos="flip "/>
-      <div>
-        <h1>
+    <footer>
+      <p>
         <TypeAnimation
           sequence={[
-            "Hi", 1000, "My Name Is",1000, "Alexander Torres"]}
-          speed={10}
-          // cursor= {false}
+            "Built",
+            1000,
+            "And",
+            1000,
+            "Designed",
+            1000,
+            "By",
+            1000,
+            "Alexander Torres",
+            2000,
+          ]}
+          speed={50}
+        //   cursor= {false}
           // style={{ fontSize: "2em" }}
-          // repeat={Infinity}
+          repeat={Infinity}
         />
-        </h1>
-      </div>
-      <p>Full Stack Developer</p>
+      </p>
+      {/* <p>Built and Designed by Alexander Torres</p> */}
       <div className="logos">
         <div className="container">
           <a href="https://github.com/alextor2625" data-aos="zoom-in">
@@ -37,8 +43,8 @@ const Home = () => {
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
-export default Home;
+export default Footer;

@@ -8,8 +8,8 @@ const Projects = () => {
       <h2 className="title-h2" data-aos="fade-down">
         Projects
       </h2>
-      <div id="DecodeMe" className="project">
-        <div className="project-box" data-aos="fade-left">
+      <div id="DecodeMe" className="project" data-aos="fade-left">
+        <div className="project-box">
           <a
             href="https://alextor2625.github.io/decodeme"
             className="project-container"
@@ -34,8 +34,8 @@ const Projects = () => {
           </a>
         </div>
       </div>
-      <div id="MotekRewards" className="project">
-        <div className="project-box" data-aos="fade-right">
+      <div id="MotekRewards" className="project" data-aos="fade-right">
+        <div className="project-box">
           <a
             href="https://motekrewards.adaptable.app"
             className="project-container"

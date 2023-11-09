@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import ContactMe from "./ContactMe";
 const Navbar = () => {
   return (
     <nav className="nav-bar">
@@ -96,6 +97,19 @@ const Navbar = () => {
             </li>
           </ul>
         </li>
+        <li>
+              <Link
+                to="ContactMe"
+                className="nav-link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Contact
+              </Link>
+            </li>
       </ul>
     </nav>
   );

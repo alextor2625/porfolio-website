@@ -1,6 +1,8 @@
 import linkedinLogo from "../assets/logos/linkedinLogo.png";
 import gmailLogo from "../assets/logos/gmailLogo.png";
 const ContactMe = () => {
+    
+
   return (
     <div id="ContactMe">
       <h1 data-aos="fade-down">Contact Me</h1>

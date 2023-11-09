@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 
 AOS.init({
   offset: 120, // offset (in px) from the original trigger point
@@ -36,6 +37,9 @@ function App() {
       </div>
       <div className="component">
         <ContactMe />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
