@@ -1,7 +1,7 @@
 import githubLogo from "../assets/logos/githubLogo.png";
 import linkedinLogo from "../assets/logos/linkedinLogo.png";
 import gmailLogo from "../assets/logos/gmailLogo.png";
-import myProfilePicture from "../assets/myProfilePicture.jpg";
+import myProfilePicture from "../assets/myProfilePicture.png";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
