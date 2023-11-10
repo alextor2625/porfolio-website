@@ -13,7 +13,7 @@ const Home = () => {
         <TypeAnimation
           sequence={[
             "Hi", 1000, "My Name Is",1000, "Alexander Torres Rivera"]}
-          speed={10}
+          speed={70}
           // cursor= {false}
           // style={{ fontSize: "2em" }}
           // repeat={Infinity}

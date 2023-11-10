@@ -10,17 +10,17 @@ const Footer = () => {
         <TypeAnimation
           sequence={[
             "Built",
-            1000,
+            500,
             "And",
-            1000,
+            500,
             "Designed",
-            1000,
+            500,
             "By",
-            1000,
+            500,
             "Alexander Torres Rivera",
             2000,
           ]}
-          speed={50}
+          speed={70}
         //   cursor= {false}
           // style={{ fontSize: "2em" }}
           repeat={Infinity}
