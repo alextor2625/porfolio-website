@@ -43,6 +43,11 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <div className="button-container-footer" data-aos="zoom-in">
+        <a href="https://drive.google.com/file/d/1-70uIPMn-P89CUOD8n5Wt_5tl_8-drCo/view?usp=sharing" id="Resume-Button-Footer">
+          <span>Resume</span>
+        </a>
+      </div>
     </footer>
   );
 };

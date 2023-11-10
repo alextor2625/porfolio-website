@@ -7,7 +7,8 @@
 
 #Home,
 #AboutMe,
-#Projects {
+#Projects,
+.button-container {
   overflow-x: hidden;
 }
 
@@ -190,6 +191,26 @@ body::-webkit-scrollbar-thumb {
   margin-left: 0; /* Adjust the margin as needed */
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  height: 20em;
+}
+.button-container #Resume-Button {
+  font-size: 2em;
+  height: 1em;
+  border-radius: 5px;
+  background-color: rgb(31, 34, 39);
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 10px 20px 15px;
+}
+.button-container #Resume-Button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(116, 149, 200, 0.2), 0 8px 14px rgba(116, 149, 200, 0.3);
+}
+
 #Home #profile-image {
   width: 311px;
   border-radius: 50%;
@@ -354,12 +375,26 @@ body::-webkit-scrollbar-thumb {
 footer {
   bottom: 0;
   width: 100%;
-  height: 20vh;
+  height: 21vh;
   background-color: rgb(31, 34, 39);
   color: white;
   padding: 20px 0;
   text-align: center;
   font-size: 14px;
+}
+footer .button-container-footer {
+  margin-top: 20px;
+}
+footer .button-container-footer #Resume-Button-Footer {
+  font-size: 2em;
+  height: 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: filter 0.3s;
+}
+footer .button-container-footer #Resume-Button-Footer:hover {
+  filter: invert(50%);
 }
 footer p {
   margin-top: 3vh;
