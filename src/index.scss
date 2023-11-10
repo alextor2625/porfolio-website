@@ -430,12 +430,14 @@ footer {
   // position: fixed;
   bottom: 0;
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   background-color: rgb(31, 34, 39);
   color: white;
   padding: 20px 0;
   text-align: center;
-  font-size: 14px;
+  #githubLogo,#gmailLogo,#linkedinLogo{
+    width: 2.1em;
+  }
   .button-container-footer {
     margin-top: 20px;
     #Resume-Button-Footer {
@@ -455,6 +457,6 @@ footer {
   }
   p {
     margin-top: 3vh;
-    font-size: 35px;
+    font-size: 1.5em;
   }
 }
