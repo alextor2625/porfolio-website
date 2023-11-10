@@ -39,19 +39,21 @@ const Projects = () => {
             href="https://motekrewards.adaptable.app"
             className="project-container"
           >
-            <div className="project-title-container">
-              <h3>Motek Rewards</h3>
+            <div>
+              <div className="project-title-container">
+                <h3>Motek Rewards</h3>
+              </div>
+              <img
+                src={MotekRewardsThumbnail}
+                alt="motekRewards-thumbnail"
+                className="thumbnail"
+              />
             </div>
             <span className="description">
               Web Page that adds a rewards feature to Motek Cafe's website based
               on how much you eat in the restaurant. This project was developed
               using NodeJs, Express, JavaScript, HTML5 and Handlebars.
             </span>
-            <img
-              src={MotekRewardsThumbnail}
-              alt="motekRewards-thumbnail"
-              className="thumbnail"
-            />
           </a>
         </div>
       </div>

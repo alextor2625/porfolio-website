@@ -7,7 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 const Home = () => {
   return (
     <div id="Home">
-      <img src={myProfilePicture} alt="myImage" id="profile-image" data-aos="flip-left"/>
+      <img src={myProfilePicture} alt="myImage" id="profile-image" data-aos="zoom-out"/>
       <div>
         <h1>
         <TypeAnimation
