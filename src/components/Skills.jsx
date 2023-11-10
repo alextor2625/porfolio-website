@@ -15,14 +15,14 @@ const Skills = () => {
       <div className="center-list-container">
         <ul className="no-list-decoration grid-list">
           <li className="logos-skill">
-            <div className="container-skill glowing-image-reactLogo" data-aos="zoom-in">
+            <div className="container-skill" data-aos="zoom-in">
               <img
                 src={reactLogo}
                 alt="react logo"
-                className="rotate"
+                className="rotate glowing-image-reactLogo"
                 id="reactLogo"
               />
-              <span id="react-title">
+              <span id="react-title" className="glowing-image-reactLogo"> 
                 <strong>React JS</strong>
               </span>
             </div>

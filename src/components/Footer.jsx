@@ -17,7 +17,7 @@ const Footer = () => {
             1000,
             "By",
             1000,
-            "Alexander Torres",
+            "Alexander Torres Rivera",
             2000,
           ]}
           speed={50}
