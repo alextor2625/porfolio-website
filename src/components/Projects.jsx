@@ -25,14 +25,14 @@ const Projects = () => {
               />
             </div>
             <span className="description">
-              Ironhack React Project, this app is a Cookbook web app. Allows
-              users to add cooking recipes into their cookbooks either by adding
-              their own recipe manually or adding other's recipes.
+              Full-stack web application that allows users to create, manage,
+              share, and review other people's cooking recipes. This web app was
+              developed using React , NodeJs, Express, Vite and JavaScript.
             </span>
           </a>
         </div>
       </div>
-      
+
       <div id="MotekRewards" className="project" data-aos="fade-right">
         <div className="project-box">
           <a
@@ -43,7 +43,9 @@ const Projects = () => {
               <h3>Motek Rewards</h3>
             </div>
             <span className="description">
-              IronHack project Webdev and UX/UI classes working together.
+              Web Page that adds a rewards feature to Motek Cafe's website based
+              on how much you eat in the restaurant. This project was developed
+              using NodeJs, Express, JavaScript, HTML5 and Handlebars.
             </span>
             <img
               src={MotekRewardsThumbnail}
