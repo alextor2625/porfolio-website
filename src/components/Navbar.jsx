@@ -1,5 +1,4 @@
 import { Link } from "react-scroll";
-import ContactMe from "./ContactMe";
 const Navbar = () => {
   return (
     <nav className="nav-bar">

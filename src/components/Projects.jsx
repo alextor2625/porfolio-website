@@ -1,6 +1,7 @@
 import decodemeThumbnail from "../assets/thumbnails/DecodeMeThumbnail.gif";
 import MotekRewardsThumbnail from "../assets/thumbnails/MotekRewardsThumbnail.gif";
 import CookBookThumbnail from "../assets/thumbnails/CookBookThumbnail.png";
+import { cookBookLink, decodeMeLink, motekRewardsLink } from "../services/ExternalLinks";
 
 const Projects = () => {
   return (
@@ -11,7 +12,7 @@ const Projects = () => {
       <div id="CookBook" className="project" data-aos="fade-left">
         <div className="project-box">
           <a
-            href="https://cookbookrecipe.netlify.app"
+            href={cookBookLink}
             className="project-container"
           >
             <div>
@@ -36,7 +37,7 @@ const Projects = () => {
       <div id="MotekRewards" className="project" data-aos="fade-right">
         <div className="project-box">
           <a
-            href="https://motekrewards.adaptable.app"
+            href={motekRewardsLink}
             className="project-container"
           >
             <div>
@@ -60,7 +61,7 @@ const Projects = () => {
       <div id="DecodeMe" className="project" data-aos="fade-left">
         <div className="project-box">
           <a
-            href="https://alextor2625.github.io/decodeme"
+            href={decodeMeLink}
             className="project-container"
           >
             <div>

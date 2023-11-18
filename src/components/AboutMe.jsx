@@ -1,3 +1,5 @@
+import { resumeLink } from "../services/ExternalLinks";
+
 const AboutMe = () => {
   return (
     <div id="AboutMe">
@@ -13,7 +15,7 @@ const AboutMe = () => {
         challenge, I give it my all.
       </p>
       <div className="button-container" data-aos="zoom-in">
-        <a href="https://drive.google.com/file/d/1-70uIPMn-P89CUOD8n5Wt_5tl_8-drCo/view?usp=sharing" id="Resume-Button">
+        <a href={resumeLink} id="Resume-Button">
           <span>Resume</span>
         </a>
       </div>
